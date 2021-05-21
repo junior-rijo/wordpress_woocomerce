@@ -122,3 +122,23 @@ array_merge($produtos1, $produtos2); // combina arrays
 array_unique($produtos); // remove valores duplicados
 
 ?>
+/*Loop O mais utilizado é o foreach*/
+<?php
+/*Array*/
+$produtos = [
+  [
+    'nome' => 'Camisa Preta',
+    'preco' => 'R$ 49'
+  ],
+  [
+    'nome' => 'Bermuda Branca',
+    'preco' => 'R$ 99'
+  ]
+];
+//utilizando a função
+foreach($produtos as $produto) {
+  echo '<h1>' . $produto['nome'] . '</h1>';
+}
+?>
+
+?>
